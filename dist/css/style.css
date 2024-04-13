@@ -1125,7 +1125,8 @@ body::after {
   overflow: hidden;
 }
 
-.projects__item img {
+.projects__item picture source,
+.projects__item picture img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1139,6 +1140,14 @@ body::after {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.projects__item a > img,
+.projects__item a > picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projects__item a::before {
@@ -1818,7 +1827,7 @@ body::after {
   }
 
   .page__services {
-    margin-bottom: 5.125rem;
+    margin-bottom: 0.0000000625rem;
   }
 
   .page__projects {
@@ -2331,22 +2340,34 @@ body::after {
     color: #333333;
     width: 100%;
     height: 100%;
-    padding: 0.9375rem 1.5625rem 0.3125rem 1.5625rem;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     background: #f8f8f8;
     border-radius: 2px 0 0 2px;
     row-gap: 0rem;
+    padding: 0.3125rem 0rem 0.3125rem 1.5625rem;
   }
 
   .menu__list li {
     width: 100%;
-    padding: 0.625rem 0rem;
+    position: relative;
   }
 
-  .menu__list li:not(:last-child) {
-    border-bottom: 1px solid #e8e8e8;
+  .menu__list li:not(:last-child) ::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    height: 1px;
+    background: #e8e8e8;
+  }
+
+  .menu__list li a {
+    display: inline-block;
+    padding: 0.625rem 0rem 0.625rem 0rem;
+    width: 100%;
   }
 
   .footer__top ::after {
@@ -2465,6 +2486,11 @@ body::after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .services__items {
+    -ms-grid-columns: ()[1fr];
+    grid-template-columns: repeat(1fr);
   }
 
   .contacts__box {
@@ -2635,15 +2661,15 @@ body::after {
     }
 }
 
-@supports (margin-bottom: clamp( 4.625rem , 5.3027777778rem  +  -0.8888888889vw , 5.125rem )) {
+@supports (margin-bottom: clamp( 0.0000000625rem , -1.6444443597rem  +  8.2222221111vw , 4.625rem )) {
     .page__services {
-      margin-bottom: clamp( 4.625rem , 5.3027777778rem  +  -0.8888888889vw , 5.125rem );
+      margin-bottom: clamp( 0.0000000625rem , -1.6444443597rem  +  8.2222221111vw , 4.625rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 4.625rem , 5.3027777778rem  +  -0.8888888889vw , 5.125rem )) {
+@supports not (margin-bottom: clamp( 0.0000000625rem , -1.6444443597rem  +  8.2222221111vw , 4.625rem )) {
     .page__services {
-      margin-bottom: calc(5.125rem + -0.5 * (100vw - 20rem) / 56.25);
+      margin-bottom: calc(0.0000000625rem + 4.6249999375 * (100vw - 20rem) / 56.25);
     }
 }
 
