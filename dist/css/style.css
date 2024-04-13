@@ -2489,8 +2489,8 @@ body::after {
   }
 
   .services__items {
-    -ms-grid-columns: ()[1fr];
-    grid-template-columns: repeat(1fr);
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
   }
 
   .contacts__box {
