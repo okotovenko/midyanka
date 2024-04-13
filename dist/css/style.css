@@ -1176,6 +1176,22 @@ body::after {
   pointer-events: none;
 }
 
+.projects__item--project > img,
+.projects__item--project > picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects__item--project picture source,
+.projects__item--project picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .projects__button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
