@@ -11,7 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240413182142">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240414135031">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- Кодування сторінки: ширина області перегляду така ж, як і ширина екрану; зум за замовчуванням 100%; заборона масштабувати контент користувачу -->
@@ -119,11 +119,14 @@
 						</div>
 					</div>
 					<div class="certificates__right">
-						<div class="certificates__img">
+						<div class="certificates__img" data-img data-popup="#popup-img">
 							<picture><source srcset="img/certificates/certificate-01.webp" type="image/webp"><img src="img/certificates/certificate-01.png" alt="certificate"></picture>
 						</div>
-						<div class="certificates__img">
+						<div class="certificates__img" data-img data-popup="#popup-img">
 							<picture><source srcset="img/certificates/certificate-02.webp" type="image/webp"><img src="img/certificates/certificate-02.png" alt="certificate"></picture>
+						</div>
+						<div class="certificates__img" data-img data-popup="#popup-img">
+							<picture><source srcset="img/certificates/certificate-03.webp" type="image/webp"><img src="img/certificates/certificate-03.png" alt="certificate"></picture>
 						</div>
 					</div>
 				</div>
@@ -301,7 +304,19 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240413182142"></script>
+	<div id="popup-img" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content--img">
+				<button data-close type="button" class="popup__close popup__close--img"></button>
+				<div class="popup__text">
+					<div class="popup__img ">
+						<img class="popup__link" src="" alt="certificate">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240414135031"></script>
 </body>
 
 </html>

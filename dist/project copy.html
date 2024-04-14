@@ -69,37 +69,52 @@
 		<main class="page">
 			<div class="page__baner baner">
 				<picture><source srcset="img/baner-bg.webp" type="image/webp"><img class="baner__bg" src="img/baner-bg.png" alt="baner"></picture>
-				<h1>Kontakty</h1>
+				<h1>Rekonstrukce</h1>
 			</div>
-			<section class="page__contacts contacts">
-				<div class="contacts__container">
-					<div class="contacts__text">Kdykoli se můžete obrátit na našeho online zástupce. Použijte telefonní číslo
-						nebo mail na našich webových stránkách nebo vyplňte níže uvedenou žádost kontaktujte nás. Ozveme se
-						vám</div>
-					<div class="contacts__box">
-						<div class="contacts__left">
-							<form action="files/sendmail/sendmail.php" data-ajax enctype="multipart/form-data" class="form" method="POST">
-								<input type="hidden" name="form_subject" value="Тема листа">
-								<label class="form-label">
-									<input type="text" placeholder="Vaše jméno" data-required name="name" id="name" autocomplete="off" maxlength="255" data-error="" class="input">
-								</label>
-								<label class="form-label">
-									<input type="tel" placeholder="Telefonní číslo" data-required name="tel" id="tel" autocomplete="off" maxlength="255" data-error="" class="input">
-								</label>
-								<label class="form-label">
-									<input type="email" placeholder="Váš e-mail" data-required name="email" id="email" autocomplete="off" maxlength="255" data-error="" class="input">
-								</label>
-								<label class="form-label">
-									<textarea placeholder="Vaše odvolání" data-required name="what" id="what" autocomplete="off" maxlength="255" data-error="" class="input"></textarea>
-								</label>
-								<button type="submit" class="button">Objednat hovor</button>
-							</form>
-						</div>
-						<div class="contacts__right">
-							<a class="_icon-phone" href="tel:+420776275830">+420 776 275 830</a>
-							<a class="_icon-email" href="mailto:midyanka@mail.cz">midyanka@mail.cz</a>
-						</div>
+			<section class="page__projects projects">
+				<div class="projects__container projects__container--project">
+					<h2></h2>
+					<div class="projects__items projects__items--project">
+						<article class="projects__item projects__item--project">
+							<picture><source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.png" alt="01"></picture>
+						</article>
+						<article class="projects__item projects__item--project">
+							<picture><source srcset="img/projects/02.webp" type="image/webp"><img src="img/projects/02.png" alt="01"></picture>
+						</article>
+						<article class="projects__item projects__item--project">
+							<picture><source srcset="img/projects/03.webp" type="image/webp"><img src="img/projects/03.png" alt="01"></picture>
+						</article>
+						<article class="projects__item projects__item--project">
+							<picture><source srcset="img/projects/02.webp" type="image/webp"><img src="img/projects/02.png" alt="01"></picture>
+						</article>
+						<article class="projects__item projects__item--project">
+							<picture><source srcset="img/projects/03.webp" type="image/webp"><img src="img/projects/03.png" alt="01"></picture>
+						</article>
+						<article class="projects__item projects__item--project">
+							<picture><source srcset="img/projects/02.webp" type="image/webp"><img src="img/projects/02.png" alt="01"></picture>
+						</article>
+						<article class="projects__item projects__item--project">
+							<picture><source srcset="img/projects/03.webp" type="image/webp"><img src="img/projects/03.png" alt="01"></picture>
+						</article>
+						<article class="projects__item projects__item--project">
+							<picture><source srcset="img/projects/03.webp" type="image/webp"><img src="img/projects/03.png" alt="01"></picture>
+						</article>
+						<article class="projects__item projects__item--project">
+							<picture><source srcset="img/projects/02.webp" type="image/webp"><img src="img/projects/02.png" alt="01"></picture>
+						</article>
+						<article class="projects__item projects__item--project">
+							<picture><source srcset="img/projects/03.webp" type="image/webp"><img src="img/projects/03.png" alt="01"></picture>
+						</article>
 					</div>
+					<!-- <nav class="navigation pagination" aria-label="Записи">
+						<div class="nav-links">
+							<a class="prev page-numbers disabled _icon-arrow-down" href="#">Předchozí</a>
+							<a class="page-numbers active" href="#">1</a>
+							<a class="page-numbers" href="#">2</a>
+							<a class="page-numbers" href="#">3</a>
+							<a class="next page-numbers _icon-arrow-down" href="#">Pokračujte</a>
+						</div>
+					</nav> -->
 				</div>
 			</section>
 		</main>
